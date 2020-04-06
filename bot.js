@@ -1,6 +1,6 @@
 
-var Discord = require('discord.io');
-var logger = require('winston');
+var Discord = require('node_modules/discord.io');
+var logger = require('node_modules/winston');
 
 // Configure logger settings
 logger.remove(logger.transports.Console);
