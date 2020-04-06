@@ -8,10 +8,15 @@ logger.add(new logger.transports.Console, {
     colorize: true
 });
 logger.level = 'debug';
+
+
 // Initialize Discord Bot
 var bot = new Discord.Client({
    token: process.env.BOT_TOKEN,
    autorun: true
+});
+bot.once('ready', () => {
+    console.log("ready");
 });
 bot.on('ready', function (evt) {
     logger.info('Connected');
