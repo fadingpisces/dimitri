@@ -1,5 +1,5 @@
 {
     "name" : "dimitri",
-    "version" : "beta",
+    "version" : "0.0.1",
     "main": "bot.js"
 }
